@@ -9,9 +9,9 @@
       .s2a  { animation: fadeIn  .35s 1.0s  forwards; }
       .s2b  { animation: fadeIn  .35s 1.4s  forwards; }
       .s2c  { animation: fadeIn  .35s 1.8s  forwards; }
-      .l2a  { animation: drawL   .45s 0.9s  forwards; stroke-dashoffset:250; }
-      .l2b  { animation: drawL   .45s 1.3s  forwards; stroke-dashoffset:250; }
-      .l2c  { animation: drawL   .45s 1.7s  forwards; stroke-dashoffset:250; }
+      .l2a  { animation: drawL   .45s 0.9s  forwards; stroke-dashoffset:1000; }
+      .l2b  { animation: drawL   .45s 1.3s  forwards; stroke-dashoffset:1000; }
+      .l2c  { animation: drawL   .45s 1.7s  forwards; stroke-dashoffset:1000; }
 
       .s3a1 { animation: fadeIn  .3s  2.2s  forwards; }
       .s3a2 { animation: fadeIn  .3s  2.45s forwards; }
@@ -19,12 +19,12 @@
       .s3b2 { animation: fadeIn  .3s  2.95s forwards; }
       .s3c1 { animation: fadeIn  .3s  3.2s  forwards; }
       .s3c2 { animation: fadeIn  .3s  3.45s forwards; }
-      .ll3a1{ animation: drawL   .3s  2.2s  forwards; stroke-dashoffset:180; }
-      .ll3a2{ animation: drawL   .3s  2.45s forwards; stroke-dashoffset:180; }
-      .ll3b1{ animation: drawL   .3s  2.7s  forwards; stroke-dashoffset:180; }
-      .ll3b2{ animation: drawL   .3s  2.95s forwards; stroke-dashoffset:180; }
-      .ll3c1{ animation: drawL   .3s  3.2s  forwards; stroke-dashoffset:180; }
-      .ll3c2{ animation: drawL   .3s  3.45s forwards; stroke-dashoffset:180; }
+      .ll3a1{ animation: drawL   .3s  2.2s  forwards; stroke-dashoffset:1000; }
+      .ll3a2{ animation: drawL   .3s  2.45s forwards; stroke-dashoffset:1000; }
+      .ll3b1{ animation: drawL   .3s  2.7s  forwards; stroke-dashoffset:1000; }
+      .ll3b2{ animation: drawL   .3s  2.95s forwards; stroke-dashoffset:1000; }
+      .ll3c1{ animation: drawL   .3s  3.2s  forwards; stroke-dashoffset:1000; }
+      .ll3c2{ animation: drawL   .3s  3.45s forwards; stroke-dashoffset:1000; }
 
       /* collapse dots appear with their parent node */
       .dot2a { animation: fadeIn .35s 1.0s forwards; }
@@ -38,8 +38,8 @@
       /* AI generated nodes */
       .ai1  { animation: popIn   .45s 5.6s forwards; }
       .ai2  { animation: popIn   .45s 5.95s forwards; }
-      .lai1 { animation: drawL   .35s 5.6s  forwards; stroke-dashoffset:180; }
-      .lai2 { animation: drawL   .35s 5.95s forwards; stroke-dashoffset:180; }
+      .lai1 { animation: drawL   .35s 5.6s  forwards; stroke-dashoffset:1000; }
+      .lai2 { animation: drawL   .35s 5.95s forwards; stroke-dashoffset:1000; }
 
       @keyframes fadeIn {
         from { opacity:0; transform:scale(.88); }
@@ -51,7 +51,8 @@
         100% { opacity:1; transform:scale(1); }
       }
       @keyframes drawL {
-        to { stroke-dashoffset:0; }
+        from { stroke-dashoffset:1000; }
+        to   { stroke-dashoffset:0; }
       }
     </style>
     <filter id="glow">
@@ -140,7 +141,7 @@
   <path class="fade l2a"
         d="M192,235 C236,235 242,148 280,148"
         fill="none" stroke="#3b82f6" stroke-width="2"
-        stroke-dasharray="250" opacity="0.75"/>
+        stroke-dasharray="1000" opacity="0.75"/>
   <g class="fade s2a">
     <rect x="280" y="133" width="88" height="30" rx="7"
           fill="rgba(59,130,246,.14)" stroke="#3b82f6" stroke-width="1.5" stroke-opacity=".8"/>
@@ -156,7 +157,7 @@
   <path class="fade l2b"
         d="M192,235 C250,235 250,235 280,235"
         fill="none" stroke="#10b981" stroke-width="2"
-        stroke-dasharray="250" opacity="0.75"/>
+        stroke-dasharray="1000" opacity="0.75"/>
   <g class="fade s2b">
     <rect x="280" y="220" width="88" height="30" rx="7"
           fill="rgba(16,185,129,.14)" stroke="#10b981" stroke-width="1.5" stroke-opacity=".8"/>
@@ -172,7 +173,7 @@
   <path class="fade l2c"
         d="M192,235 C236,235 242,322 280,322"
         fill="none" stroke="#f59e0b" stroke-width="2"
-        stroke-dasharray="250" opacity="0.75"/>
+        stroke-dasharray="1000" opacity="0.75"/>
   <g class="fade s2c">
     <rect x="280" y="307" width="88" height="30" rx="7"
           fill="rgba(245,158,11,.14)" stroke="#f59e0b" stroke-width="1.5" stroke-opacity=".8"/>
@@ -188,7 +189,7 @@
   <path class="fade ll3a1"
         d="M373,148 C420,148 430,118 468,118"
         fill="none" stroke="#3b82f6" stroke-width="1.4"
-        stroke-dasharray="180" opacity="0.55"/>
+        stroke-dasharray="1000" opacity="0.55"/>
   <g class="fade s3a1">
     <rect x="468" y="105" width="94" height="24" rx="5"
           fill="rgba(59,130,246,.10)" stroke="#3b82f6" stroke-width="1.1" stroke-opacity=".55"/>
@@ -198,7 +199,7 @@
   <path class="fade ll3a2"
         d="M373,148 C420,148 430,178 468,178"
         fill="none" stroke="#3b82f6" stroke-width="1.4"
-        stroke-dasharray="180" opacity="0.55"/>
+        stroke-dasharray="1000" opacity="0.55"/>
   <g class="fade s3a2">
     <rect x="468" y="165" width="94" height="24" rx="5"
           fill="rgba(59,130,246,.10)" stroke="#3b82f6" stroke-width="1.1" stroke-opacity=".55"/>
@@ -209,7 +210,7 @@
   <path class="fade ll3b1"
         d="M373,235 C420,235 430,212 468,212"
         fill="none" stroke="#10b981" stroke-width="1.4"
-        stroke-dasharray="180" opacity="0.55"/>
+        stroke-dasharray="1000" opacity="0.55"/>
   <g class="fade s3b1">
     <rect x="468" y="199" width="94" height="24" rx="5"
           fill="rgba(16,185,129,.10)" stroke="#10b981" stroke-width="1.1" stroke-opacity=".55"/>
@@ -219,7 +220,7 @@
   <path class="fade ll3b2"
         d="M373,235 C420,235 430,258 468,258"
         fill="none" stroke="#10b981" stroke-width="1.4"
-        stroke-dasharray="180" opacity="0.55"/>
+        stroke-dasharray="1000" opacity="0.55"/>
   <g class="fade s3b2">
     <rect x="468" y="245" width="94" height="24" rx="5"
           fill="rgba(16,185,129,.10)" stroke="#10b981" stroke-width="1.1" stroke-opacity=".55"/>
@@ -230,7 +231,7 @@
   <path class="fade ll3c1"
         d="M373,322 C420,322 430,299 468,299"
         fill="none" stroke="#f59e0b" stroke-width="1.4"
-        stroke-dasharray="180" opacity="0.55"/>
+        stroke-dasharray="1000" opacity="0.55"/>
   <g class="fade s3c1">
     <rect x="468" y="286" width="94" height="24" rx="5"
           fill="rgba(245,158,11,.10)" stroke="#f59e0b" stroke-width="1.1" stroke-opacity=".55"/>
@@ -240,7 +241,7 @@
   <path class="fade ll3c2"
         d="M373,322 C420,322 430,345 468,345"
         fill="none" stroke="#f59e0b" stroke-width="1.4"
-        stroke-dasharray="180" opacity="0.55"/>
+        stroke-dasharray="1000" opacity="0.55"/>
   <g class="fade s3c2">
     <rect x="468" y="332" width="94" height="24" rx="5"
           fill="rgba(245,158,11,.10)" stroke="#f59e0b" stroke-width="1.1" stroke-opacity=".55"/>
@@ -251,7 +252,7 @@
   <path class="fade lai1"
         d="M373,322 C420,322 430,385 468,385"
         fill="none" stroke="#f59e0b" stroke-width="1.6"
-        stroke-dasharray="180" opacity="0.75"/>
+        stroke-dasharray="1000" opacity="0.75"/>
   <g class="fade ai1" filter="url(#glow)">
     <rect x="468" y="372" width="94" height="24" rx="5"
           fill="rgba(245,158,11,.22)" stroke="#f59e0b" stroke-width="1.8"/>
@@ -261,7 +262,7 @@
   <path class="fade lai2"
         d="M373,322 C420,322 430,425 468,425"
         fill="none" stroke="#f59e0b" stroke-width="1.6"
-        stroke-dasharray="180" opacity="0.75"/>
+        stroke-dasharray="1000" opacity="0.75"/>
   <g class="fade ai2" filter="url(#glow)">
     <rect x="468" y="412" width="94" height="24" rx="5"
           fill="rgba(245,158,11,.22)" stroke="#f59e0b" stroke-width="1.8"/>
