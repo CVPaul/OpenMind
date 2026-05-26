@@ -8,7 +8,11 @@
 ![PWA](https://img.shields.io/badge/PWA-ready-brightgreen)
 ![No Backend](https://img.shields.io/badge/backend-none-lightgrey)
 
----
+<br>
+
+![OpenMind Demo](./assets/demo.svg)
+
+<br>
 
 ## 特性
 
